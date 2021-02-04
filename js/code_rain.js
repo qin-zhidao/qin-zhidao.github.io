@@ -8,7 +8,7 @@ const p = Array(Math.floor(width / 10) + 1).fill(0);
 
 const random = (items) => items[Math.floor(Math.random() * items.length)];
 
-const hex = "ABCDEFGHIJKLMNOPQRSTUVWXYZ你好".split("");
+const hex = "ABCDEFGHIJKLMNOPQRSTUVWXYZ你好@#%&".split("");
 
 setInterval(
     () => {
