@@ -1,20 +1,24 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>秦直道的主页</title>
-    <link rel="stylesheet" href="css/index.css">
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="yes" name="apple-touch-fullscreen" />
+	<meta content="telephone=no,email=no" name="format-detection" />
+	<meta content="maximum-dpr=2" name="flexible" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>秦直道的主页</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/zzsc.css">
 </head>
 <body>
-    <div class="box">
-        <h1>秦 直 道</h1>
-        <p class="slogan">一个技术还不到位的技术宅</p>
-        <a href="https://github.com/qin-zhidao">GitHub</a>
-        <a href="mailto:qinzhidao@foxmail.com">Email</a>
-        
-    </div>
-    <canvas id="code_rain">
-    <script src="js/code_rain.js"></script>
+	<!-- 参考
+	http://www.sucaiabc.com/jiaoben/jiaoben/jquery/20254.html -->
+	<canvas id="canvas"></canvas>
+	<div class="container">
+		<p>Happy 🐮 Year!!!</p>
+		<p id="information" style="display: none;">点击屏幕任意位置</p>
+	</div>
+	<script src="js/index.js"></script>
 </body>
 </html>

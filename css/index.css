@@ -1,82 +1,51 @@
-* {
-    margin: 0; padding: 0;
-}
-
 body {
-    overflow: hidden;
-    font-size: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #F2B705;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 
-canvas {
-    position: absolute;
-    top: 0; left: 0;
-    z-index: -1;
+p {
+  margin: 0px;
+  padding: 0px;
 }
 
-::-webkit-scrollbar {
-    display: none; /* Chrome Safari */
+#canvas {
+  margin: 0px;
+  padding: 0px;
 }
 
-.box {
-    user-select: none;
-    color: #0f0;
-    background-color: rgba(0, 0, 0, .8);
-    text-align: center; /* 文字横向居中 */
-    
-	width: 80%;
-    height: 30%;
-    /* 上下左右置中 */
-	margin: auto;
-	position: absolute;
-	top: 0; bottom: 0;
-    left: 0; right: 0;
-    overflow: hidden;
-    animation: load 5s ease-in-out;
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: "Finger Paint", cursive;
+  font-size: calc(25px + 4.3vw);
+  color: #ff3333;
+  text-align: center;
+  z-index: -1;
 }
 
-@keyframes load {
-    from {
-      transform: translate3d(0, 100%, 0);
-    }
-  
-    to {
-      transform: none;
-    }
-}  
-
-a {
-    color: #0f0;
-    font-size: 22px;
-    list-style: none;
-    text-decoration: none;
+#information {
+  font-size: calc(15px + 0.5vw);
+  -webkit-animation: 1s linear 3s forwards hideinfo;
+  animation: 1s linear 3s forwards hideinfo;
 }
 
-.box h1 {
-    font-size: 48px;
-    position: relative;
-    margin: 20px auto;
-}
-
-.slogan {
-    border-right: 2px solid #fff;
-    width: 12em;
-    margin: 20px auto;
-    font-size: 24px;
-    white-space: nowrap;
-    overflow: hidden;
-    -webkit-animation-delay: 3s; 
-    animation-delay: 3s;
-    animation: typing 4s steps(12),
-        caret 1s steps(1) infinite;
-}
-
-/* 打字机效果，参考文章
-https://blog.arvinh.info/tech/css-typing-animation 
-*/
-@keyframes typing {
-    from { width: 0 }
-}
-
-@keyframes caret {
-    50% { border-color: transparent; }
+@keyframes hideinfo {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
