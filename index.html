@@ -1,54 +1,70 @@
 <!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
 <head>
 	<title>秦直道</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css"/>
+		<a href="https://www.google.cn/chrome/index.html">External Link</a>
+	</noscript>
+
+	<link rel="stylesheet" href="assets/css/index.css">
+	<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js"></script>
 </head>
-<body class="is-preload">
+<body>
+	<main>
+		<!-- 唱片机 -->
+		<div class="player">
+			<!-- 唱片 -->
+			<div class="record">
+				<div class="label">
+					<h2>歌曲名</h2>
+					<h3>作者</h3>
+				</div>
+				<div class="spindle"></div>
+			</div>
+			<!-- 唱臂容器 -->
+			<div class="arm-container">
+				<!-- 唱臂旋钮 下 -->
+				<div class="knob weight bottom"></div>
+				<!-- 唱臂 -->
+				<div class="arm"></div>
+				<!-- 唱臂旋钮 上 -->
+				<div class="knob weight top">
+				<!-- 播放按钮 -->
+				<button class="play">
+					<!-- 提示信息 -->
+					<div class="tooltip">点击这里播放</div>
+				</button>
+				</div>
+			</div>
+			<!-- 扬声器 -->
+			<div class="speaker">
+				<div class="hole"></div>
+				<div class="hole"></div>
+				<div class="hole"></div>
+				<div class="hole"></div>
+				<div class="hole"></div>
+				<div class="hole"></div>
+				<div class="hole"></div>
+				<div class="hole"></div>
+			</div>
+			<!-- 声音旋钮 下 -->
+			<div class="knob volume bottom"> 
+				<div class="down"></div>
+				<div class="up"></div>
+			</div>
+			<!-- 声音旋钮 上 -->
+		  	<div class="knob volume top"></div>
+		</div>
+	</main>
+	<footer>
+		<a href="https://soundcloud.com/ryanjohndee/sets/small-multiples">查看歌单</a>
+	</footer>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
-
-		<!-- Main -->
-		<section id="main">
-			<header>
-				<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-				<h1>秦直道</h1>
-				<p>一个技术还不到位的技术宅</p>
-			</header>
-			<footer>
-				<ul class="icons">
-					<li><a href="https://twitter.com/qinzhidao" class="icon brands fa-twitter">Twitter</a></li>
-					<li><a href="https://github.com/qin-zhidao" class="icon brands fa-github">GitHub</a></li>
-					<li><a href="mailto:qinzhidao@foxmail.com" class="icon solid fa-envelope">Facebook</a></li>
-				</ul>
-			</footer>
-		</section>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<ul class="copyright">
-				<li>&copy; 秦直道</li>
-				<li><a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
-		</footer>
-
-	</div>
-
-	<!-- Scripts -->
-	<script>
-		if ('addEventListener' in window) {
-			window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-		}
-	</script>
+	<script src="assets/js/index.js"></script>
 </body>
 </html>
