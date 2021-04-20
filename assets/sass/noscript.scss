@@ -1,3 +1,9 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+
 /*
 	Lens by HTML5 UP
 	html5up.net | @ajlkn
@@ -8,7 +14,13 @@
 
 	#main {
 		opacity: 1 !important;
-		right: 0 !important;
+
+		@if _misc(main-side) == 'left' {
+			left: 0 !important;
+		}
+		@else {
+			right: 0 !important;
+		}
 	}
 
 	body:before {
@@ -16,14 +28,20 @@
 		display: block;
 		position: absolute;
 		top: 50%;
-		width: calc(100% - 22.5em * 0.333333333);
+		width: calc(100% - #{_size(main)} * 0.333333333);
 		height: 4em;
 		margin-top: -2em;
-		color: #282828;
+		color: mix(_palette(page-bg), #fff, 90%);
 		cursor: default;
 		font-size: 3em;
 		line-height: 4em;
 		text-align: center;
 		white-space: nowrap;
-		left: 0;
+
+		@if _misc(main-side) == 'left' {
+			right: 0;
+		}
+		@else {
+			left: 0;
+		}
 	}
